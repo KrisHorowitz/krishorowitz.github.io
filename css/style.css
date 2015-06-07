@@ -1,19 +1,108 @@
-h1 {
+h1, h2, h3 {
   text-align: center;
-  font-family: "din-condensed-web", sans-serif;
+}
+
+h2 {
+  font-size: 48px;
+  font-family: "Poiret One", sans-serif;
+}
+
+span {
+  font-family: "Poiret One", sans-serif;
+  border: 1px solid #000;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 200px auto 0 auto;
+  display: table;
+}
+
+span:hover {
+  background: #000;
+  color: #fff;
+}
+
+.header {
+  margin-top: 100px;
+  height: 90vh;
+}
+
+.cursive {
+  font-family: 'Sacramento', cursive;
+}
+
+.social-bar {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.twitter {
+  display: block;
+  background: url(../images/twitter-logo.png) no-repeat;
+  height: 48px;
+  width: 48px;
+}
+
+.mail {
+  display: block;
+  background: url(../images/email-48-black.png) no-repeat;
+  height: 48px;
+  width: 48px;
+}
+
+.twitter:hover {
+  background-position: -48px 0;
+}
+
+@-webkit-keyframes animate {
+0%{
+   opacity: 0;
+ }
+40%{
+   opacity: 0;
+}
+100%{
+   opacity: 1;
+ }
+}
+#arrows {
+    margin: 0 50%;
+    position: relative;
+    right: 13px;
+    top: 20px;
+}
+#arrows .arrow{
+    background:url(../images/arrow.png) no-repeat;
+    height:20px;
+    width:25px;
+    opacity: 0;
+}
+#arrows .arrow.show{
+    -webkit-animation-name: animate;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
 }
 
 .left {
-  border-right: 2px solid #000;
+  border-right: 1px solid #000;
 }
 
 .right {
-  border-left: 2px solid #000;
+  border-left: 1px solid #000;
 }
 
 .left,
 .right {
   height: 1000px;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  border-bottom: solid 1px #000;
+  line-height: 95%;
+  margin: 5px;
 }
 
 .work {
@@ -30,6 +119,7 @@ h1 {
   border-top: 1px solid red;
   border-right: 1px solid blue;
   border-bottom: 1px solid blue;
+  padding: 7px 0;
   position: relative;
   margin: 0 auto;
   min-width: 125px;
