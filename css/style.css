@@ -1,14 +1,16 @@
+body {
+  font-family: "Poiret One", sans-serif;
+}
+
 h1, h2, h3 {
   text-align: center;
 }
 
 h2 {
   font-size: 48px;
-  font-family: "Poiret One", sans-serif;
 }
 
 span {
-  font-family: "Poiret One", sans-serif;
   border: 1px solid #000;
   text-align: center;
   padding: 5px 10px;
@@ -21,108 +23,139 @@ span:hover {
   color: #fff;
 }
 
+ul li {
+  font-family:sans-serif;
+}
+
 .header {
   margin-top: 100px;
-  height: 90vh;
+  height: 50vh;
 }
 
 .cursive {
   font-family: 'Sacramento', cursive;
 }
 
-.social-bar {
-  position: fixed;
-  right: 0;
-  top: 0;
-}
-
-.twitter {
-  display: block;
-  background: url(../images/twitter-logo.png) no-repeat;
-  height: 48px;
-  width: 48px;
-}
-
-.mail {
-  display: block;
-  background: url(../images/email-48-black.png) no-repeat;
-  height: 48px;
-  width: 48px;
-}
-
 .twitter:hover {
   background-position: -48px 0;
 }
 
-@-webkit-keyframes animate {
-0%{
-   opacity: 0;
- }
-40%{
-   opacity: 0;
-}
-100%{
-   opacity: 1;
- }
-}
-#arrows {
-    margin: 0 50%;
-    position: relative;
-    right: 13px;
-    top: 20px;
-}
-#arrows .arrow{
-    background:url(../images/arrow.png) no-repeat;
-    height:20px;
-    width:25px;
-    opacity: 0;
-}
-#arrows .arrow.show{
-    -webkit-animation-name: animate;
-    -webkit-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
+/* TIMELINE */
+.timeline-start {
+  background: url('../images/down-arrow.png') no-repeat center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  height: 40px;
 }
 
-.left {
-  border-right: 1px solid #000;
+.timeline,
+.timeline-half,
+.timeline-2x {
+  background: url('../images/timeline-black.png') center;
+  background-repeat: repeat-y;
 }
 
-.right {
-  border-left: 1px solid #000;
+.timeline-half {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.left,
-.right {
-  height: 1000px;
+.timeline {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.timeline-2x {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.timeline-node {
+  background: url('../images/timeline-node.png') center top no-repeat;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background-size: 20px 20px;
+}
+
+.timeline-node:hover {
+  background: url('../images/timeline-node-hover.png') center top no-repeat;
+  background-size: 20px 20px;
+}
+
+.timeline-end {
+  background: url('../images/timeline-end.png') center no-repeat;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-size: 40px 40px;
 }
 
 .title {
   text-align: center;
   font-size: 24px;
   border-bottom: solid 1px #000;
-  line-height: 95%;
   margin: 5px;
 }
 
-.work {
-  top: 300px;
+.date {
+  position: relative;
+  margin: 0;
+  font-size: 18px;
 }
 
-.college {
-  top: 600px;
+.date-left {
+  right: 40px;
 }
 
-.work,
-.college {
+.date-right {
+  left: 40px;
+}
+
+.year {
+  font-size: 32px;
+}
+
+.popup {
   border-left: 1px solid red;
   border-top: 1px solid red;
   border-right: 1px solid blue;
   border-bottom: 1px solid blue;
-  padding: 7px 0;
-  position: relative;
-  margin: 0 auto;
+  padding: 15px 15px;
+  position: absolute;
   min-width: 125px;
+  max-width: 350px;
   width: 25%;
   z-index: 2;
+}
+
+.popup-left {
+  margin-right:62.5%;
+  right: 1px;
+}
+
+.popup-right {
+  margin-left:62.5%;
+}
+
+/* CONTACT */
+
+.contact {
+  border-top: 1px solid black;
+}
+
+.contact-icon {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+}
+
+.twitter {
+  background: url(../images/twitter-logo.png) no-repeat;
+}
+
+.mail {
+  background: url(../images/email-48-black.png) no-repeat;
 }
