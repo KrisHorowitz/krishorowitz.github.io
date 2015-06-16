@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'EB Garamond';
+  src:  url('../fonts/EBGaramond-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand-Regular.ttf') format('truetype');
+}

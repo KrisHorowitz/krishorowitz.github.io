@@ -1,5 +1,5 @@
 body {
-  font-family: "Poiret One", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 h1, h2, h3 {
@@ -24,7 +24,9 @@ span:hover {
 }
 
 ul li {
-  font-family:sans-serif;
+  font-family:'EB Garamond', serif;
+  position: relative;
+  left: -5px;
 }
 
 .header {
@@ -34,10 +36,6 @@ ul li {
 
 .cursive {
   font-family: 'Sacramento', cursive;
-}
-
-.twitter:hover {
-  background-position: -48px 0;
 }
 
 /* TIMELINE */
@@ -95,7 +93,7 @@ ul li {
 
 .title {
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   border-bottom: solid 1px #000;
   margin: 5px;
 }
@@ -123,12 +121,16 @@ ul li {
   border-top: 1px solid red;
   border-right: 1px solid blue;
   border-bottom: 1px solid blue;
-  padding: 15px 15px;
+  padding: 10px 10px;
   position: absolute;
   min-width: 125px;
   max-width: 350px;
   width: 25%;
   z-index: 2;
+}
+
+.popup p {
+  text-align: center;
 }
 
 .popup-left {
@@ -146,16 +148,27 @@ ul li {
   border-top: 1px solid black;
 }
 
+.icons {
+  text-align: center;
+}
+
 .contact-icon {
   display: inline-block;
-  height: 48px;
-  width: 48px;
+  height: 128px;
+  width: 128px;
 }
 
 .twitter {
-  background: url(../images/twitter-logo.png) no-repeat;
+  background: url(../images/twitter-256-black.png) no-repeat;
+  background-size: 128px 128px;
 }
 
 .mail {
-  background: url(../images/email-48-black.png) no-repeat;
+  background: url(../images/email-256-black.png) no-repeat;
+  background-size: 128px 128px;
+}
+
+.github{
+  background: url(../images/github-256-black.png) no-repeat;
+  background-size: 128px 128px;
 }
