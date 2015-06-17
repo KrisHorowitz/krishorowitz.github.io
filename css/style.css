@@ -31,7 +31,7 @@ ul li {
 
 .header {
   margin-top: 100px;
-  height: 50vh;
+  margin-bottom: 300px;
 }
 
 .cursive {
@@ -40,7 +40,7 @@ ul li {
 
 /* TIMELINE */
 .timeline-start {
-  background: url('../images/down-arrow.png') no-repeat center;
+  background: url('../images/down-arrow-2.png') no-repeat center;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -165,6 +165,11 @@ ul li {
 
 .mail {
   background: url(../images/email-256-black.png) no-repeat;
+  background-size: 128px 128px;
+}
+
+.linkedin {
+  background: url(../images/linkedin-256-black.png) no-repeat;
   background-size: 128px 128px;
 }
 
