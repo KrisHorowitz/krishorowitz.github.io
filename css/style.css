@@ -38,6 +38,11 @@ ul li {
   font-family: 'Sacramento', cursive;
 }
 
+.resume {
+  display: table;
+  margin: 0 auto;
+}
+
 /* TIMELINE */
 .timeline-start {
   background: url('../images/down-arrow-2.png') no-repeat center;
@@ -140,6 +145,13 @@ ul li {
 
 .popup-right {
   margin-left:62.5%;
+}
+
+/* ABOUT */
+.about {
+  border-top: 1px solid black;
+  padding: 30px 15%;
+  font-style: italic;
 }
 
 /* CONTACT */
