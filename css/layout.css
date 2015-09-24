@@ -1,0 +1,51 @@
+@media all and (min-width:636px) and (max-width:795px) {
+  .popup-left {
+    margin-right: 60%;
+  }
+
+  .popup-right {
+    margin-left: 60%;
+  }
+
+  .popup {
+    width: 37%;
+  }
+}
+
+@media all and (max-width: 635px) {
+  ul {
+    padding-left: 30px;
+  }
+
+  .popup {
+    width: 35%;
+  }
+}
+
+@media all and (min-width: 490px) and (max-width: 542px) {
+  .popup {
+    padding: 5px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  body {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 489px) {
+  .mobile-hidden {
+    display: none;
+  }
+
+  .mobile-show {
+    display: block;
+  }
+
+  .header {
+    margin-bottom: 50px;
+  }
+}

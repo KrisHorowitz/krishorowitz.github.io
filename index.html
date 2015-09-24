@@ -12,24 +12,52 @@
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/layout.css">
 </head>
 
 <body>
+  <!-- key: 1/2 timeline = 1 month -->
   <div class="container-fluid">
     <div class="row header">
       <h2 class="cursive">The life of</h2>
       <h1>Kris Horowitz</h1>
+      <p>Copywriter // Novice Coder // Linguist</p>
       <a class="resume" href="images/kris-horowitz-resume.pdf">résumé</a>
 <!--       <span>Scroll down</span> -->
+
     </div>
-    <div class="row">
+    <div class="mobile-show row">
+      <p>~ This website is a lot fancier in the browser. ~</p>
+    </div>
+    <div class="row mobile-hidden">
       <div class="timeline-start">
+      </div>
+      <div class="timeline"></div>
+      <div class="timeline-year">
+        <h2 class="year">now</h2>
+        <!-- Travel Blog -->
+        <div id="travel" class="popup popup-right wow fadeInRight">
+          <p class="title">Project: <a href="http://kristravails.tumblr.com" target="_blank">Travel Blog</a></p>
+          <p>August 2015</p>
+          <ul>
+            <li>Started a travel blog after a trip to Israel</li>
+          </ul>
+        </div>
+        <div class="timeline"></div>
+        <div class="timeline-half"></div>
+      </div> <!-- /timeline year -->
+
+      <!-- Aug 15 -->
+      <div id="aug15" class="timeline-node">
+        <h3 class="date date-left">Aug.</h3>
+
         <!-- Bookies -->
         <div id="bookies" class="popup popup-left wow fadeInLeft">
-          <p class="title">Project: <a href="http://books.kris.life">Bookies</a></p>
+          <p class="title">Project: <a href="http://books.kris.life" target="_blank">Bookies</a></p>
           <p>July 2015</p>
           <ul>
             <li>Create a virtual book shelf!</li>
@@ -37,13 +65,16 @@
             <li>Pulls book titles and covers from Amazon API</li>
           </ul>
         </div>
+
+        <div class="timeline-half"></div>
       </div>
-      <div class="timeline"></div>
-      <div class="timeline-year">
-        <h2 class="year">now</h2>
+
+      <!-- July 15 -->
+      <div class="timeline-node" id="jul15">
+        <h3 class="date date-right">July</h3>
 
         <!-- Betaworks -->
-        <div id="betaworks" class="popup popup-right wow fadeInRight">
+        <div class="popup popup-right wow fadeInRight" id="betaworks">
           <p class="title">Junior Developer</p>
           <p>Betaworks, Jan. 2015 – July </p>
           <ul>
@@ -51,13 +82,12 @@
             <li>Built internal intranet in Python with Django framework</li>
           </ul>
         </div>
-
-        <div class="timeline"></div>
         <div class="timeline-half"></div>
-      </div> <!-- /timeline year -->
+        <div class="timeline"></div>
+      </div>
 
       <!-- Mar 15 -->
-      <div class="timeline-node">
+      <div class="reg timeline-node">
         <h3 class="date date-left">March</h3>
         <!-- Flatiron School -->
         <div id="flatiron" class="popup popup-left wow fadeInLeft">
@@ -83,7 +113,7 @@
       </div> <!-- /timeline year -->
 
       <!-- Aug 2014 -->
-      <div class="timeline-node">
+      <div class="reg timeline-node">
         <h3 class="date date-right">Aug.</h3>
 
         <!-- General Assemnbly -->
@@ -115,11 +145,11 @@
         <!-- Tapestry -->
         <div id="tap1" class="popup popup-left wow fadeInLeft">
           <p class="title">Storytelling and Community</p>
-          <p>Tapestry, Oct. 2014 - Jul 2015</p>
+          <p>Tapestry, Oct. 2013 - Jul 2014</p>
           <ul>
             <li>Ran all social media for the storytelling app Tapestry</li>
             <li>Oversaw customer service and outreach</li>
-            <li>Wrote copy for days</li>
+            <li>Wrote copy for Tapestry and a bi-weekly <a target="_blank" href="http://digg.com/source/readtapestry.com">series</a> for Digg</li>
           </ul>
         </div>
         <div class="timeline"></div>
@@ -131,7 +161,7 @@
         <div class="timeline"></div>
       </div>
       <!-- July 2013 -->
-      <div class="timeline-node">
+      <div class="reg timeline-node">
         <h3 class="date date-right">July</h3>
 
         <!-- Tapestry Intern -->
@@ -139,7 +169,7 @@
           <p class="title">Content Intern</p>
           <p>Tapestry, Jul 2013 - Sep.</p>
           <ul>
-            <li>Created stories for the storytelling app Tapestry using a combination of HTML, CSS and Photoshop</li>
+            <li>Created <a target="_blank" href="http://cdn.readtapestry.com/stories/0O499wijg/index.html">stories</a> for the storytelling app Tapestry using a combination of HTML, CSS and Photoshop</li>
           </ul>
         </div>
 
@@ -147,7 +177,7 @@
       </div>
 
       <!-- June 2013 -->
-      <div class="timeline-node">
+      <div class="reg timeline-node">
         <h3 class="date date-right">June</h3>
         <!-- UCSB -->
         <div id="ucsb" class="popup popup-left wow fadeInLeft">
@@ -164,10 +194,13 @@
 
       <div class="timeline-end"></div>
       <div class="timeline-2x"></div>
+    </div> <!-- /row -->
 
+    <div class="row">
       <div class="about">
-        <h3>I am a junior developer currently looking for my next project. JavaScript and Python are my most comfortable languages and I enjoy tooling around with 3D objects in Three.js.</h3>
-        <h3>I love to laugh, I'm a fan of descriptive grammar, a human ranger in 5th edition D&D and I tried standup once and didn't totally fail.</h3>
+        <h3>I am currently looking for my next project.</h3>
+        <h3>I'm comfortable with JS, Python, HTML and CSS. I love words, languages, and laughing. I'm a fan of descriptive grammar, a human ranger in 5th edition D&D, and I tried standup once and it was OK.</h3>
+        <h3>I made this website.</h3>
       </div>
 
       <div class="contact">
@@ -175,11 +208,11 @@
         <div class="icons">
           <a class="contact-icon twitter slideInUp wow" href="http://www.twitter.com/KrisHorowitz" target="_blank"></a>
           <a class="contact-icon mail slideInUp wow" href="mailto:kris.horowitz@gmail.com"></a>
+          <br class="mobile-show">
           <a class="contact-icon linkedin slideInUp wow" href="https://www.linkedin.com/in/krishorowitz"></a>
           <a class="contact-icon github slideInUp wow" href="http://www.github.com/krishorowitz" target="_blank"></a>
         </div>
       </div>
-
     </div> <!-- /row -->
   </div> <!-- /container -->
 

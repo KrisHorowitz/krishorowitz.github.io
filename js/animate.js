@@ -17,8 +17,10 @@ $(popup).hover(
 );
 }
 
+hover("#travel", "#aug15");
 hover("#betaworks", "#jan15");
 hover("#tap1", "#oct13");
+hover("#bookies", "#jul15");
 
 
 //look into
