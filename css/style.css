@@ -44,9 +44,8 @@ ul li {
   font-family: 'Sacramento', cursive;
 }
 
-.resume {
-  display: table;
-  margin: 0 auto;
+.link {
+  display: inline-block;
 }
 
 /* TIMELINE */
