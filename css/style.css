@@ -36,7 +36,7 @@ ul li {
 
 .header {
   margin-top: 100px;
-  margin-bottom: 250px;
+  margin-bottom: 150px;
   text-align: center;
 }
 
@@ -107,6 +107,11 @@ ul li {
   border-bottom: solid 1px #000;
   margin: 5px;
 }
+
+.node-text-left
+  {
+    right: 50px;
+  }
 
 .date {
   position: relative;
