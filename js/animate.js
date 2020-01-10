@@ -20,9 +20,9 @@ $(popup).hover(
 hover("#dots-gd", "#dec17");
 hover("#dots-jr","#dec15");
 hover("#blog", "#oct15");
+hover("#flatiron", "#mar15");
 hover("#betaworks", "#jan15");
 hover("#tap1", "#oct13");
-hover("#bookies", "#jul15");
 
 
 //look into
