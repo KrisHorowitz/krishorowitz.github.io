@@ -132,10 +132,11 @@ ul li {
 }
 
 .popup {
-  border-left: 1px solid red;
-  border-top: 1px solid red;
-  border-right: 1px solid blue;
-  border-bottom: 1px solid blue;
+  border-left: 5px double red;
+  border-top: 5px double red;
+  border-right: 5px double blue;
+  border-bottom: 5px double blue;
+  border-radius: 10px;
   padding: 10px 10px;
   position: absolute;
   min-width: 125px;
@@ -159,24 +160,24 @@ ul li {
 
 /* ABOUT */
 .about {
-  border-top: 1px solid black;
+  border-top: 5px double black;
   padding: 30px 15%;
 }
 
 /* CONTACT */
 
 .contact {
-  border-top: 1px solid black;
+  border-top: 5px double black;
 }
 
 .mobile-show {
   display: none;
   text-align: center;
   font-family: 'EB Garamond', serif;
-  border-left: 1px solid red;
-  border-top: 1px solid red;
-  border-right: 1px solid blue;
-  border-bottom: 1px solid blue;
+  border-left: 5px double red;
+  border-top: 5px double red;
+  border-right: 5px double blue;
+  border-bottom: 5px double blue;
   margin: 10px 10px 50px 10px;
   padding: 10px;
 }
