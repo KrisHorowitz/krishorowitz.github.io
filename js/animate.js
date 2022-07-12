@@ -17,7 +17,9 @@ $(popup).hover(
 );
 }
 
-hover("#dots-gd", "#dec17");
+hover("#available", "#now");
+hover("#dots-sr-gd", "#jun22");
+hover("#dots-gd", "#may21");
 hover("#dots-jr","#dec15");
 hover("#blog", "#oct15");
 hover("#flatiron", "#mar15");

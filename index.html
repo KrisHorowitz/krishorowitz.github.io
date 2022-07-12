@@ -8,8 +8,11 @@
     <!-- The above 3 meta tags *must* come first -->
   <link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
   <title>Kris Horowitz</title>
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
     <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,41 +27,94 @@
   <div class="container-fluid">
     <div class="row header">
       <h1>Kris Horowitz</h1>
-      <p>Game Designer</p>
-      <a class="link" href="assets/kris-horowitz-resume.pdf">résumé</a>
-      <p class="link"> + </p>
-      <a class="link" href="assets/copywriting-portfolio.pdf">copywriting portfolio</a>
+      <p>Senior Game Designer</p>
+      <a class="link" href="assets/kris-horowitz-resume.pdf">Résumé</a>
 <!--       <span>Scroll down</span> -->
 
     </div>
     <div class="mobile-show row">
       <p class="quicksand">Are you on a phone right now?</p>
-      <p>I tried making this site teeny-tiny but it didn't do it justice. Sorry about that, I made the site myself. But you can check out this site on a computer OR my <em>fully-responsive</em> <a href="http://blog.kris.life">blog</a>. ;))))</p>
+      <p>I tried making this site teeny-tiny but it didn't do it justice. Sorry! I coded everything myself and I am not a programmer by trade. For the full experience, view on a laptop. &#128522;</p>
     </div>
     <div class="row mobile-hidden">
       <div class="timeline-start"></div>
       <div class="timeline"></div>
+      
+      <!-- NOW -->
       <div class="timeline-year">
         <h2 class="year">Now</h2>
-      </div> <!-- /timeline year -->
+      </div> 
+      <div class="timeline"></div>
+
+      <!-- Available -->
+      <div id="available" class="popup popup-right wow fadeInRight">
+        <p class="title">Available</p>
+        <p>Your Team, Now</p>
+        <p>I can help you with:</p>
+        <ul>
+          <li>Live-ops planning &amp; management</li>
+          <li>Game vision &amp; theming</li>
+          <li>Spec writing</li>
+          <li>Design documentation</li>
+          <li>Content creation</li>
+          <li>Gameify-ing apps (improving retention, player funnel, onboarding, adding core loops)</li>
+          <li>Slack memes</li>
+        </ul>
+      </div>
+      
+      <!-- today -->
+      <div id="now" class="timeline-node">
+        <h3 class="date node-text-left">Today</h3>
+      </div>
+      <div class="timeline"></div>
+      
+      <!-- 2022 -->
+      <div class="timeline-year">
+        <h2 class="year">2022</h2>
 
       <div class="timeline"></div>
-      <!-- now -->
-      <div id="dec17" class="timeline-node">
-        <h3 class="date node-text-left">Today</h3>
 
-        <!-- Dots Game Designer -->
-        <div id="dots-gd" class="popup popup-right wow fadeInRight">
-          <p class="title">Game Designer</p>
-          <p>Dec. 2017-now</p>
-          <ul>
-            <li>Design game features and systems for live mobile titles and unreleased ones.</li>
-            <li> Ran a team for a mobile title from prototype through pre-production. </li>
-          </ul>
-        </div>
-        <div class="timeline"></div>
+      <!-- June -->
+      <div id="jun22" class="timeline-node">
+        <h3 class="date date-right">Jun.</h3>
       </div>
 
+      <!-- Dots Senior Game Designer -->
+      <div id="dots-sr-gd" class="popup popup-left wow fadeInLeft">
+        <p class="title">Senior Game Designer</p>
+        <p>DOTS, May 2021-Jun. 2022</p>
+        <p>Worked in new games development.</p>
+        <ul>
+          <li>Created the concept, vision and all design documentation for an undisclosed project</li>
+          <li>Personally tapped to pitch new game concepts for the studio</li>
+          <li>Lead designer on three original titles</li>
+        </ul>
+      </div>
+      <div class="timeline"></div>
+
+      <!-- 2021 -->
+      <div class="timeline-year">
+        <h2 class="year">2021</h2>
+      </div> 
+
+      <div class="timeline"></div>
+
+      <!-- May -->
+      <div id="may21" class="timeline-node">
+        <h3 class="date date-left">May</h3>
+      </div>
+
+      <!-- Dots Game Designer -->
+      <div id="dots-gd" class="popup popup-right wow fadeInRight">
+        <p class="title">Game Designer</p>
+        <p>DOTS, Dec. 2017-May 2021</p>
+        <ul>
+          <li>Designed game features and systems for live mobile titles and unreleased ones.</li>
+          <li>Ran a team for a mobile title from prototype through pre-production. </li>
+        </ul>
+      </div>
+      <div class="timeline"></div>
+    </div>
 
       <!-- 2015 -->
       <div class="timeline"></div>
@@ -73,7 +129,7 @@
         <!-- Dots Jr. Game Designer-->
         <div id="dots-jr" class="popup popup-left wow fadeInLeft">
           <p class="title">Jr. Game Designer</p>
-          <p>Dec. 2015-2017</p>
+          <p>DOTS, Dec. 2015-2017</p>
           <ul>
             <li>Designed levels for the mobile game Two Dots</li>
             <li>Helped conceive and implement new game mechanics</li>
@@ -217,9 +273,9 @@
 
     <div class="row">
       <div class="about">
-        <h3>I work for the mobile game studio <a href="http://weplaydots.com/">Dots</a> as a game designer.</h3>
-        <h3>I love games, languages, and laughing.</h3>
-        <h3>I made this website.</h3>
+        <h3>I am available for freelance game design work!</h3> 
+        <p>I lead teams with the belief that game making should be fun. Other things I like include <a href="http://212.3.126.104:8051/">writing</a>, <a href="https://www.etymonline.com/">linguistics</a> and <a href="https://renfair.com/ny/">renaissance faires</a>. Let’s chat! I’ll tell you about my side project. And fan fic.</p>
+        <p>Formerly <a href="http://weplaydots.com/">Dots</a>. I made this website.</p>
       </div>
 
       <div class="contact">
