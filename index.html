@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="The personal website of Kris Horowitz, game designer extraordinaire.">
     <!-- The above 3 meta tags *must* come first -->
-  <link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+
   <title>Kris Horowitz</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
     <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/site.webmanifest">
+
     <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/fonts.css">
@@ -23,368 +28,191 @@
 </head>
 
 <body>
-  <!-- key: 1/2 timeline = 1 month -->
-  <div class="container">
+  <div class="container-sm text-center">
+
     <!-- Home -->
-    <div class="row header">
-        <div class="col-sm-12">
-            <img src="./images/KH_Dancing.png" class="img-responsive center-block" width="25%" height="25%">
-            <h1>Kris Horowitz</h1>
-            <p class="sub-header">GAME DESIGNER</p>
-            <!--      <a class="link" href="assets/kris-horowitz-resume.pdf">Résumé</a>-->
-            <!--       <span>Scroll down</span> -->
+    <div class="px-3 py-md-5 mx-md-3 justify-content-center">
+        <div class="p-3 mx-auto my-4">
+            <img src="./images/KH_Dancing.png" class="img-fluid logo my-3">
+            <h1 class="fs-huge py-3 lh-1">Kris Horowitz</h1>
+            <p class="lead">GAME DESIGNER</p>
         </div>
     </div>
+
     <!-- About-->
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="center-block fake-button">
-                <p class="text-center">HI FROM KRIS!</p>
-            </div>
-            <h2>I am a freelance game designer with over 7 years of making games. I've worked across many genres including mobile, browser and PC.</h2>
+    <div class="row px-3 py-md-5 mx-md-3 justify-content-center">
+        <div class="col col-lg-9 p-3 mx-auto my-4">
+            <p class="fake-button btn-x-padding h6 py-3 my-3">HI FROM KRIS!</p>
+            <h2 class="about display-5 py-5">I am a freelance game designer with over 7 years of making games. I've worked across many genres including mobile, browser and PC.</h2>
         </div>
     </div>
     
     <!-- Services -->
-    <div class="row">
-        <div class="col-sm-12">
-            <h2>My Expertise</h2>
-            <div class="row">
-                <div class="col-sm-4 text-center border">
-                    <div class="logo-temp center-block"></div>
-                    <h3>Game Vision</h3>
-                    <p>In-depth analysis of what your game can be.</p>
-                </div>
-                <div class="col-sm-4 text-center border">
-                    <div class="logo-temp center-block"></div>
-                    <h3>Documentation</h3>
-                    <p>Stream line & organize your process with standardized documentation.</p>
-                </div>
-                <div class="col-sm-4 text-center border">
-                    <div class="logo-temp center-block"></div>
-                    <h3>Live-ops Planning</h3>
-                    <p>How to prepare for GaaS, tricks, tips and hacks.</p>
+    <div class="p-5">
+        <h2 class="display-5 p-5">My Expertise</h2>
+
+        <!-- Cards -->
+        <div class="row row-cols-1 row-cols-lg-3">
+
+            <!-- Card 1 -->
+            <div class="col p-4">
+                <div class='card kris-bg border-dark mb-4 h-100'>
+                    <div class='card-img-top py-3'>
+                        <div class="logo-temp mx-auto my-0"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Game Vision</h3>
+                        <p class="mt-3 mb-4">In-depth analysis of what your game can be.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+            
+            <!-- Card 2 -->
+            <div class="col p-4">
+                <div class='card kris-bg border-dark mb-4 h-100'>
+                    <div class='card-img-top py-3'>
+                        <div class="logo-temp mx-auto my-0"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Documentation</h3>
+                        <p class="mt-3 mb-4">Stream line & organize your process with standardized documentation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col p-4">
+                <div class='card kris-bg border-dark mb-4 h-100'>
+                    <div class='card-img-top py-3'>
+                        <div class="logo-temp mx-auto my-0"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Live-Ops</h3>
+                        <p class="mt-3 mb-4">How to prepare for GaaS, tricks, tips and hacks.</p>
+                    </div>
+                </div>
+            </div>
+
+<!--             <div class="col kris-border p-4">
+                <div class="logo-temp mx-auto  my-4"></div>
+                <h3>Live-ops Planning</h3>
+                <p>How to prepare for GaaS, tricks, tips and hacks.</p>
+            </div> -->
+         </div> 
+     </div>
+
     
     <!-- Samples -->
-    <div class="row">
-        <h2>My Gaming Portfolio</h2>
-        <div>
-            <div>
-                <p class="quicksand-bold">Garden Tails</b>
-                <p>I developed the concept, vision and all design documentation. Sold to Apple Arcade and launched September 2022.</p>
+    <div class="row py-5">
+        <h2 class="my-5 display-5">My Gaming Portfolio</h2>
+        <div class="kris-border p-4 my-5 text-start">
+            
+            <!-- Game 1-->
+            <div class="row mt-4 mx-4 pb-4">
+                <div class="col-3">
+                    <p class="quicksand-bold">Garden Tails</p>
+                </div>
+                <div class="col-9">
+                    <p>I developed the concept, vision and all design documentation. Sold to Apple Arcade and launched September 2022.</p>
+                </div>
             </div>
-            <div>
-                <p class="quicksand-bold">Undisclosed</p>
-                <p>As we all know in the games industry, not all titles make it out into the world. I worked in new games mobile development for several years. Personally tapped to pitch new game concepts for the studio. Delivered the studio standard for new game documentation.</p>
+
+            <!-- Game 2 -->
+            <div class="row mx-4 py-4">
+                <div class="col-3">
+                    <p class="quicksand-bold">Undisclosed</p>
+                </div>
+                <div class="col-9">
+                    <p>As we all know in the games industry, not all titles make it out into the world. I worked in new games mobile development for several years. Personally tapped to pitch new game concepts for the studio. Delivered the studio standard for new game documentation.</p>
+                </div>
             </div>
-            <div>
-                <p class="quicksand-bold">Two Dots</p>
-                <p>Designed levels for the wildly successful game Two Dots. Additionally, I conceived and implemented new puzzle mechanics.</p>
+
+            <!-- Game 3 -->
+            <div class="row mx-4 pt-4 mb-4">
+                <div class="col-3">
+                    <p class="quicksand-bold">Two Dots</p>
+                </div>
+                <div class="col-9">
+                    <p>Designed levels for the wildly successful game Two Dots. Additionally, I conceived and implemented new puzzle mechanics.</p>
+                </div>
             </div>
         </div>
     </div>
     
     <!-- Testimonials -->
-    <div class="row">
-        <h2>Client Testimonials</h2>
-        <div>
-            <p class="quicksand-bold">Joe Mares, Fun Empire</p>
-            <p>Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+    <h2 class="mb-3 display-5">Client Testimonials</h2>
+    <div class="row row-cols-1 row-cols-lg-3">
+
+    <!-- Card 1 -->
+    <div class="col p-4">
+        <div class='card kris-bg mb-4 h-100'>
+            <div class="card-body">
+                <h3 class="card-title">Joe Mares, Fun Empire</h3>
+                <p class="mt-3 mb-4">Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+            </div>
         </div>
-        <div>
-            <p class="quicksand-bold">Grant Reid, DOTS</p>
-            <p>Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+    </div>
+    
+    <!-- Card 2 -->
+    <div class="col p-4">
+        <div class='card kris-bg mb-4 h-100'>
+            <div class="card-body">
+                <h3 class="card-title">Grant Reid, DOTS</h3>
+                <p class="mt-3 mb-4">Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+            </div>
         </div>
-        <div>
-            <p class="quicksand-bold">Somebody else, Ruthston Media</p>
-            <p>Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col p-4">
+        <div class='card kris-bg mb-4 h-100'>
+            <div class="card-body">
+                <h3 class="card-title">Somebody else, Ruthston Media</h3>
+                <p class="mt-3 mb-4">Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="mb-3 display-5">Client Testimonials</h2>
+    <div class="row my-5">
+        <div class="col-md-4">
+            <p class="quicksand-bold fake-button">Joe Mares, Fun Empire</p>
+            <p class="text-start">Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+        </div>
+        <div class="col-md-4">
+            <p class="quicksand-bold fake-button">Grant Reid, DOTS</p>
+            <p class="text-start">Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+        </div>
+        <div class="col-md-4">
+            <p class="quicksand-bold fake-button">Somebody else, Ruthston Media</p>
+            <p class="text-start">Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
         </div>
     </div>
     
     <!-- Contact -->
-    <div class="row">
         <!-- img -->
-        <h2>Let's Work Together</h2>
-        <div>
-            <div>
+        <h2 class="mb-3 display-5">Let's Work Together</h2>
+        <div class="row my-5">
+            <div class="col-4">
                 <p class="quicksand-bold">Mailing Address</p>
                 <p>123 Anywhere St., Any City, State, Country 12345</p>
             </div>
-            <div>
+            <div class="col-4">
                 <p class="quicksand-bold">Email Address</p>
                 <p>kris.horowitz@gmail.com</p>
             </div>
-            <div>
+            <div class="col-4">
                 <p class="quicksand-bold">LinkedIn</p>
                 <p>LinkedIn Profile</p>
             </div>
         </div>
     </div>
-<!--    <div class="mobile-show row">-->
-<!--      <p class="quicksand">Are you on a phone right now?</p>-->
-<!--      <p>I tried making this site teeny-tiny but it didn't do it justice. Sorry! I coded everything myself and I am not a programmer by trade. For the full experience, view on a laptop. &#128522;</p>-->
-<!--    </div>-->
-<!--    <div class="row mobile-hidden">-->
-<!--      <div class="timeline-start"></div>-->
-<!--      <div class="timeline"></div>-->
-<!--      -->
-<!--      <!-- NOW -->-->
-<!--      <div class="timeline-year">-->
-<!--        <h2 class="year">Now</h2>-->
-<!--      </div> -->
-<!--      <div class="timeline"></div>-->
-<!---->
-<!--      <!-- Available -->-->
-<!--      <div id="available" class="popup popup-right wow fadeInRight">-->
-<!--        <p class="title">Available</p>-->
-<!--        <p>Your Team, Now</p>-->
-<!--        <p>I can help you with:</p>-->
-<!--        <ul>-->
-<!--          <li>Live-ops planning &amp; management</li>-->
-<!--          <li>Game vision &amp; theming</li>-->
-<!--          <li>Spec writing</li>-->
-<!--          <li>Design documentation</li>-->
-<!--          <li>Content creation</li>-->
-<!--          <li>Gameify-ing apps (improving retention, player funnel, onboarding, adding core loops)</li>-->
-<!--          <li>Slack memes</li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--      -->
-<!--      <!-- today -->-->
-<!--      <div id="now" class="timeline-node">-->
-<!--        <h3 class="date node-text-left">Today</h3>-->
-<!--      </div>-->
-<!--      <div class="timeline"></div>-->
-<!--      -->
-<!--      <!-- 2022 -->-->
-<!--      <div class="timeline-year">-->
-<!--        <h2 class="year">2022</h2>-->
-<!---->
-<!--      <div class="timeline"></div>-->
-<!---->
-<!--      <!-- June -->-->
-<!--      <div id="jun22" class="timeline-node">-->
-<!--        <h3 class="date date-right">Jun.</h3>-->
-<!--      </div>-->
-<!---->
-<!--      <!-- Dots Senior Game Designer -->-->
-<!--      <div id="dots-sr-gd" class="popup popup-left wow fadeInLeft">-->
-<!--        <p class="title">Senior Game Designer</p>-->
-<!--        <p>DOTS, May 2021-Jun. 2022</p>-->
-<!--        <p>Worked in new games development.</p>-->
-<!--        <ul>-->
-<!--          <li>Created the concept, vision and all design documentation for an undisclosed project</li>-->
-<!--          <li>Personally tapped to pitch new game concepts for the studio</li>-->
-<!--          <li>Lead designer on three original titles</li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--      <div class="timeline"></div>-->
-<!---->
-<!--      <!-- 2021 -->-->
-<!--      <div class="timeline-year">-->
-<!--        <h2 class="year">2021</h2>-->
-<!--      </div> -->
-<!---->
-<!--      <div class="timeline"></div>-->
-<!---->
-<!--      <!-- May -->-->
-<!--      <div id="may21" class="timeline-node">-->
-<!--        <h3 class="date date-left">May</h3>-->
-<!--      </div>-->
-<!---->
-<!--      <!-- Dots Game Designer -->-->
-<!--      <div id="dots-gd" class="popup popup-right wow fadeInRight">-->
-<!--        <p class="title">Game Designer</p>-->
-<!--        <p>DOTS, Dec. 2017-May 2021</p>-->
-<!--        <ul>-->
-<!--          <li>Designed game features and systems for live mobile titles and unreleased ones.</li>-->
-<!--          <li>Ran a team for a mobile title from prototype through pre-production. </li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--      <div class="timeline"></div>-->
-<!--    </div>-->
-<!---->
-<!--      <!-- 2015 -->-->
-<!--      <div class="timeline"></div>-->
-<!--      <div class="timeline-year">-->
-<!--        <h2 class="year">2017</h2>-->
-<!--      </div>-->
-<!--      <div class="timeline"></div>-->
-<!---->
-<!--      <!-- Dec 17 -->-->
-<!--      <div id="dec15" class="timeline-node">-->
-<!--        <h3 class="date date-right">Dec.</h3>-->
-<!--        <!-- Dots Jr. Game Designer-->-->
-<!--        <div id="dots-jr" class="popup popup-left wow fadeInLeft">-->
-<!--          <p class="title">Jr. Game Designer</p>-->
-<!--          <p>DOTS, Dec. 2015-2017</p>-->
-<!--          <ul>-->
-<!--            <li>Designed levels for the mobile game Two Dots</li>-->
-<!--            <li>Helped conceive and implement new game mechanics</li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--        <div class="timeline"></div>-->
-<!--      </div>-->
-<!---->
-<!--      <!-- 2015 -->-->
-<!--      <div class="timeline"></div>-->
-<!--      <div class="timeline-year">-->
-<!--        <h2 class="year">2015</h2>-->
-<!--      </div>-->
-<!---->
-<!--      <div class="timeline-half"></div>-->
-<!---->
-<!--          <!-- Blog -->-->
-<!--          <div id="blog" class="popup popup-right wow fadeInRight">-->
-<!--            <p class="title">Project: <a href="http://blog.kris.life" target="_blank">Blog</a></p>-->
-<!--            <p>October 2015</p>-->
-<!--            <ul>-->
-<!--              <li>A place for me to wax philosophical</li>-->
-<!--            </ul>-->
-<!--          </div>-->
-<!---->
-<!--          <div class="timeline"></div>-->
-<!---->
-<!--      <!-- Oct 15 -->-->
-<!--      <div id="oct15" class="timeline-node">-->
-<!--        <h3 class="date date-left">Oct.</h3>-->
-<!--        <!-- Flatiron School -->-->
-<!--        <div id="flatiron" class="popup popup-left wow fadeInLeft">-->
-<!--          <p class="title">Front-End Course</p>-->
-<!--          <p>Flatiron School, Feb. 2015 - March</p>-->
-<!--          <ul>-->
-<!--            <li>Completed a 10 week front-end web development course</li>-->
-<!--            <li>Studied CSS, HTML, JavaScript, and Git</li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--        <div class="timeline-half"></div>-->
-<!--        <div class="timeline"></div>-->
-<!--      </div>-->
-<!--      <!-- /Oct 15 -->-->
-<!---->
-<!--      <!-- Mar 15 -->-->
-<!--      <div id="mar15" class="reg timeline-node">-->
-<!--        <h3 class="date date-left">March</h3>-->
-<!--        <!-- Betaworks -->-->
-<!--        <div class="popup popup-right wow fadeInRight" id="betaworks">-->
-<!--          <p class="title">Junior Developer</p>-->
-<!--          <p>Betaworks, Jan. 2015 – July </p>-->
-<!--          <ul>-->
-<!--            <li>Built tools in node.js for an in-house project with third party APIs</li>-->
-<!--            <li>Built internal intranet in Python with Django framework</li>-->
-<!--            <li>Learned programming was ultimately not the career for me</li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--        <div class="timeline"></div>-->
-<!--      </div>-->
-<!--      <!-- Jan 15 -->-->
-<!--      <div class="timeline-node" id="jan15">-->
-<!--        <h3 class="date date-right">Jan.</h3>-->
-<!--      <div class="timeline-half"></div>-->
-<!--      </div>-->
-<!---->
-<!--      <!-- 2014 -->-->
-<!--      <div class="timeline-year">-->
-<!--        <h2 class="year">2014</h2>-->
-<!--        <div class="timeline-2x"></div>-->
-<!--      </div> <!-- /timeline year -->-->
-<!---->
-<!--      <!-- Aug 2014 -->-->
-<!--      <div class="reg timeline-node">-->
-<!--        <h3 class="date date-right">Aug.</h3>-->
-<!---->
-<!--        <!-- General Assemnbly -->-->
-<!--        <div id="ga" class="popup popup-left wow fadeInLeft">-->
-<!--          <p class="title">Web Basics</p>-->
-<!--          <p>General Assembly, July 2014 - Sep.</p>-->
-<!--          <ul>-->
-<!--            <li>10 week class focused on building a site at the end</li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!---->
-<!--        <!-- Tapestry -->-->
-<!--        <div id="tap2" class="popup popup-right wow fadeInRight">-->
-<!--          <p class="title">Account Manager</p>-->
-<!--          <p>Tapestry, Aug. 2014 - Dec.</p>-->
-<!--          <ul>-->
-<!--            <li>Coordinated clients and creative for an interactive mobile advertsiting platform</li>-->
-<!--            <li>Worked with brands such as Coach, Showtime, Fox Searchlight, and WE tv</li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="timeline-2x"></div>-->
-<!--        <div class="timeline"></div>-->
-<!--        <div class="timeline-half"></div>-->
-<!--      </div>-->
-<!---->
-<!--      <!-- 2013 -->-->
-<!--      <div class="timeline-year">-->
-<!--        <h2 class="year">2013</h2>-->
-<!--        <!-- Tapestry -->-->
-<!--        <div id="tap1" class="popup popup-left wow fadeInLeft">-->
-<!--          <p class="title">Storytelling and Community</p>-->
-<!--          <p>Tapestry, Oct. 2013 - Jul 2014</p>-->
-<!--          <ul>-->
-<!--            <li>Wrote copy for Tapestry and a bi-weekly <a target="_blank" href="http://digg.com/source/readtapestry.com">series</a> for Digg</li>-->
-<!--            <li>Ran all social media for the storytelling app Tapestry</li>-->
-<!--            <li>Oversaw customer service and outreach</li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--        <div class="timeline"></div>-->
-<!--      </div> <!-- /timeline year -->-->
-<!---->
-<!--      <!-- Oct 2013 -->-->
-<!--      <div id="oct13" class="timeline-node">-->
-<!--        <h3 class="date date-left">Oct.</h3>-->
-<!--        <div class="timeline"></div>-->
-<!--      </div>-->
-<!---->
-<!--      <!-- June 2013 -->-->
-<!--      <div class="reg timeline-node">-->
-<!--        <h3 class="date date-right">June</h3>-->
-<!--        <!-- UCSB -->-->
-<!--        <div id="ucsb" class="popup popup-right wow fadeInRight">-->
-<!--          <p class="title">Education</p>-->
-<!--          <p>University of California, Santa Barbara 2009-2013</p>-->
-<!--          <ul>-->
-<!--            <li>Majored in Linguistics and Theater with a minor in French</li>-->
-<!--            <li>GPA 3.97</li>-->
-<!--            <li>Dean's List every semester</li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--        <div class="timeline-2x"></div>-->
-<!--      </div>-->
-<!---->
-<!--      <div class="timeline-end"></div>-->
-<!--      <div class="timeline-2x"></div>-->
-<!--    </div> <!-- /row -->-->
-
-    <div class="row">
-      <div class="about">
-        <h3>I am available for freelance game design work!</h3> 
-        <p>I lead teams with the belief that game making should be fun. Other things I like include <a href="http://212.3.126.104:8051/">writing</a>, <a href="https://www.etymonline.com/">linguistics</a> and <a href="https://renfair.com/ny/">renaissance faires</a>. Let’s chat! I’ll tell you about my side project. And fan fic.</p>
-        <p>Formerly <a href="http://weplaydots.com/">Dots</a>. I made this website.</p>
-      </div>
-
-      <div class="contact">
-        <h2>Say Hello</h2>
-        <div class="icons">
-          <a class="contact-icon twitter" href="http://www.twitter.com/KrisHorowitz" target="_blank"></a>
-          <a class="contact-icon mail" href="mailto:kris.horowitz@gmail.com"></a>
-          <br class="mobile-show">
-          <a class="contact-icon linkedin" href="https://www.linkedin.com/in/krishorowitz"></a>
-        </div>
-      </div>
-    </div> <!-- /row -->
   </div> <!-- /container -->
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/animate.js"></script>
 
