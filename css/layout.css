@@ -1,3 +1,10 @@
+@media (min-width: 1366px) {
+  .fs-huge {
+    font-size: 7.25rem;
+  }
+}
+
+
 @media all and (min-width:636px) and (max-width:795px) {
   .popup-left {
     margin-right: 60%;
