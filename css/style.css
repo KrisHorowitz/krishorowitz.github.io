@@ -72,8 +72,12 @@ ul li {
   font-size: calc(4.525rem + 3.3vw);
 }
 
-.kris-bg {
+.k-no-bg {
   background-color: transparent;
+}
+
+.k-no-bor {
+    border: none;
 }
 
 .kris-border {
