@@ -1,24 +1,14 @@
 body {
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
+  background: #FFD0CD;
 }
 
 h1, h2, h3 {
   font-family: 'Solway';
   font-weight: 400;
-  text-align: center;
 }
 
-h1 {
-  font-size: 115px;
-}
-
-h2 {
-    font-size: 48px;
-}
-
-h3 {
-    font-size: 28px;
 }
 
 span {
@@ -40,26 +30,18 @@ ul li {
   left: -5px;
 }
 
-.header {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  text-align: center;
-}
-
-.cursive {
-  font-family: 'Sacramento', cursive;
-}
-
 .link {
   display: inline-block;
 }
 
 .logo {
-    
+    max-width: 120px;
 }
 
 .logo-temp {
-    background-color: black;
+    background-image: url('../images/sparkle.png');
+    background-repeat: no-repeat;
+    background-size: contain;
     height: 100px;
     width: 100px;
     clip-path: circle(50%);
@@ -70,55 +52,35 @@ ul li {
     font-family: 'Quicksand Bold', serif;
 }
 
-.sub-header {
-    font-size: 21px;
-}
-
 .fake-button {
     border: 1px solid black;
     border-radius: 50px;
-    width: 300px;
+    display: inline-block;
+    padding: 0.5rem;
 }
 
-.fake-button p {
-    margin-top: 10px;
+.gap-sm {
+  height: 1rem;
 }
 
-.border {
-    border: black 1px solid;
+.btn-x-padding {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.fs-huge {
+  font-size: calc(4.525rem + 3.3vw);
+}
+
+.kris-bg {
+  background-color: transparent;
+}
+
+.kris-border {
+  border: black 1px solid;
 }
 
 /* TIMELINE */
-.timeline-start {
-  background: url('../images/down-arrow-2.png') no-repeat center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  height: 80px;
-}
-
-.timeline,
-.timeline-half,
-.timeline-2x {
-  background: url('../images/timeline-black.png') center;
-  background-repeat: repeat-y;
-}
-
-.timeline-half {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.timeline {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.timeline-2x {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 
 .timeline-node {
   background: url('../images/timeline-node.png') center top no-repeat;
@@ -134,57 +96,9 @@ ul li {
   background-size: 20px 20px;
 }
 
-.timeline-end {
-  background: url('../images/timeline-end.png') center no-repeat;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-size: 40px 40px;
-}
-
-.title {
-  text-align: center;
-  font-size: 22px;
-  border-bottom: solid 1px #000;
-  margin: 5px;
-}
-
-.node-text-left
-  {
-    right: 50px;
-  }
-
-.date {
-  position: relative;
-  margin: 0;
-  font-size: 18px;
-}
-
-.date-left {
-  right: 40px;
-}
-
-.date-right {
-  left: 40px;
-}
-
-.year {
-  font-size: 32px;
-}
-
-.popup {
-  border: 5px double #C4B6D5;
-  border-radius: 10px;
-  padding: 10px 10px;
-  position: absolute;
-  min-width: 125px;
-  max-width: 350px;
-  width: 25%;
-  z-index: 2;
-}
-
-.popup p {
-  text-align: center;
-}
+/*.title {
+  margin-bottom: 3rem;
+}*/
 
 .popup-left {
   margin-right:62.5%;
@@ -195,8 +109,16 @@ ul li {
   margin-left:62.5%;
 }
 
+/* SECTIONS */
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 768 px;
+}
+
+
 /* ABOUT */
-.about {
+.old-about {
   border-top: 5px double black;
   padding: 30px 15%;
 }
@@ -209,7 +131,6 @@ ul li {
 
 .mobile-show {
   display: none;
-  text-align: center;
   font-family: 'EB Garamond', serif;
   border-left: 5px double red;
   border-top: 5px double red;
@@ -221,10 +142,6 @@ ul li {
 
 .quicksand {
   font-family: 'Quicksand', sans-serif;
-}
-
-.icons {
-  text-align: center;
 }
 
 .contact-icon {
