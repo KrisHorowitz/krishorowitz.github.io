@@ -1,19 +1,39 @@
 @font-face {
-  font-family: 'EB Garamond';
-  src:  url('../fonts/EBGaramond-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Quicksand';
-  src: url('../fonts/Quicksand-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Quicksand Bold';
-  src: url('../fonts/Quicksand-Bold.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'Solway';
-  src: url('../fonts/Solway-Regular.tff') format('truetype');
+  src: url('../fonts/solway-regular-webfont.woff2') format('woff2'),
+        url('../fonts/solway-regular-webfont.woff') format('woff'),
+        url('../fonts/Solway-Regular.tff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  ;
+}
+
+@font-face {
+    font-family: 'barbraregular';
+    src: url('../fonts/Brabra-Regular.ttf') format('truetype'), 
+        url('../fonts/barbra-regular-webfont.woff2') format('woff2'),
+        url('../fonts/barbra-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lexend_decaregular';
+    src: url('../fonts/LexendDeca-Regular.ttf') format('truetype'),
+         url('../fonts/lexenddeca-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lexenddeca-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'varela_roundregular';
+    src: url('../fonts/VarelaRound-Regular.ttf') format('truetype'),
+         url('../fonts/varelaround-regular-webfont.woff2') format('woff2'),
+         url('../fonts/varelaround-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }

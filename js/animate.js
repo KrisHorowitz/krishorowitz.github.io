@@ -1,42 +1,50 @@
-function hover(popup, node){
-console.log(popup, node);
+// function hover(popup, node){
+// console.log(popup, node);
 
-$(popup).hover(
-    function() {
-        $(node).css({
-            "background": "url('images/timeline-node-hover.png') center top no-repeat",
-            "background-size": "20px 20px"
-        });
-    },
-    function() {
-        $(node).css({
-            "background": "url('images/timeline-node.png') center top no-repeat",
-            "background-size": "20px 20px"
-        });
-    }
-);
-}
+// $(popup).hover(
+//     function() {
+//         $(node).css({
+//             "background": "url('images/timeline-node-hover.png') center top no-repeat",
+//             "background-size": "20px 20px"
+//         });
+//     },
+//     function() {
+//         $(node).css({
+//             "background": "url('images/timeline-node.png') center top no-repeat",
+//             "background-size": "20px 20px"
+//         });
+//     }
+// );
+// }
 
-hover("#available", "#now");
-hover("#dots-sr-gd", "#jun22");
-hover("#dots-gd", "#may21");
-hover("#dots-jr","#dec15");
-hover("#blog", "#oct15");
-hover("#flatiron", "#mar15");
-hover("#betaworks", "#jan15");
-hover("#tap1", "#oct13");
+// hover("#available", "#now");
+// hover("#dots-sr-gd", "#jun22");
+// hover("#dots-gd", "#may21");
+// hover("#dots-jr","#dec15");
+// hover("#blog", "#oct15");
+// hover("#flatiron", "#mar15");
+// hover("#betaworks", "#jan15");
+// hover("#tap1", "#oct13");
+
 
 // Define the color gradient as an array of colors
 const colorGradient = [
-  { r: 255, g: 208, b: 205 }, // pink
-  { r: 255, g: 242, b: 202 }, // yellow
+   { r: 241, g: 210, b: 229}, //JK pink
+   { r: 254, g: 229, b: 150}, // JK yellow
+   { r: 142, g: 212, b: 218}, // blue
 ];
 
 // Get the height of the website
 const websiteHeight = document.body.offsetHeight;
 
+// Calculate the initial background color on page load
+setBackgroundColor();
+
 // Listen for the "scroll" event
-window.addEventListener('scroll', () => {
+window.addEventListener('scroll', setBackgroundColor);
+
+// Function to set the background color based on the scroll position
+function setBackgroundColor() {
   // Get the current scroll position
   const scrollPosition = window.pageYOffset;
 
@@ -61,22 +69,10 @@ window.addEventListener('scroll', () => {
 
   // Set the background color of the website
   document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-});
+}
 
-
-
-//look into
-// $(function() {
-//   $('a[href*=#]:not([href=#])').click(function() {
-//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//       var target = $(this.hash);
-//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-//       if (target.length) {
-//         $('html,body').animate({
-//           scrollTop: target.offset().top
-//         }, 1000);
-//         return false;
-//       }
-//     }
-//   });
+//emoji particle effects
+// window.addEventListener("load", (event) => {
+//   const targetElement = document.querySelector("#emoji");
+//     new cursoreffects.emojiCursor({ emoji: ["✨"] });
 // });
