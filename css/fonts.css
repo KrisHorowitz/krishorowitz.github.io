@@ -9,6 +9,15 @@
 }
 
 @font-face {
+    font-family: 'solwaybold';
+    src: url('../fonts/Solway-Bold.ttf') format('truetype'),
+         url('../fonts/Solway-Bold.woff2') format('woff2'),
+         url('../fonts/Solway-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'barbraregular';
     src: url('../fonts/Brabra-Regular.ttf') format('truetype'), 
         url('../fonts/barbra-regular-webfont.woff2') format('woff2'),
