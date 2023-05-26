@@ -1,32 +1,3 @@
-// function hover(popup, node){
-// console.log(popup, node);
-
-// $(popup).hover(
-//     function() {
-//         $(node).css({
-//             "background": "url('images/timeline-node-hover.png') center top no-repeat",
-//             "background-size": "20px 20px"
-//         });
-//     },
-//     function() {
-//         $(node).css({
-//             "background": "url('images/timeline-node.png') center top no-repeat",
-//             "background-size": "20px 20px"
-//         });
-//     }
-// );
-// }
-
-// hover("#available", "#now");
-// hover("#dots-sr-gd", "#jun22");
-// hover("#dots-gd", "#may21");
-// hover("#dots-jr","#dec15");
-// hover("#blog", "#oct15");
-// hover("#flatiron", "#mar15");
-// hover("#betaworks", "#jan15");
-// hover("#tap1", "#oct13");
-
-
 // Define the color gradient as an array of colors
 const colorGradient = [
    { r: 241, g: 210, b: 229}, //JK pink
@@ -74,5 +45,5 @@ function setBackgroundColor() {
 //emoji particle effects
 // window.addEventListener("load", (event) => {
 //   const targetElement = document.querySelector("#emoji");
-//     new cursoreffects.emojiCursor({ emoji: ["✨"] });
+//     new cursoreffects.emojiCursor({ emoji: ["✨", "🌙", "💫", "☁️"] });
 // });
