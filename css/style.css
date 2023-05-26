@@ -27,6 +27,10 @@ a:hover {
   transition: 0.2s ease-out;
 }
 
+b {
+  font-weight: 900;
+}
+
 .logo {
     max-width: 120px;
 }
@@ -71,11 +75,13 @@ a:hover {
 
 .kris-border {
   border: black 1px solid;
+  border-radius: 0.375rem;
 }
 
 .quicksand {
   font-family: 'Quicksand', sans-serif;
 }
+
 
 /*.item {
   position: relative;
@@ -164,6 +170,7 @@ a:hover {
   height: auto;
   width: fit-content;
   transform: skewY(-5deg) rotate(5deg);
+  display: inline-block;
 }
 
 .redacted span {
@@ -172,16 +179,39 @@ a:hover {
   padding-right: 0.5rem;
 }
 
+.reveal span {
+  color: #fff;
+}
+
 .redacted span:hover {
   color: #fff;
 }
 
-li .redacted {
+/*li .redacted {
   display: inline-block;
-}
+}*/
 
 .k-lgi-mod {
   border: none;
   background: transparent;
 }
 
+.varela {
+  font-family: 'varela_roundregular', sans-serif;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.make-block {
+  display: block;
+}
+
+.max-200-px {
+  max-height: 200px;
+}
+
+.solway-bold {
+  font-family: 'solwaybold', sans-serif;
+}
