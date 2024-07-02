@@ -182,8 +182,10 @@ b {
 }
 
 .nda {
-  width: auto;
-  height: 140px;
+  min-width: 256px;
+  min-height: 143px;
+  max-width: 410px;
+  max-height: 227px;
   background: black;
 }
 
