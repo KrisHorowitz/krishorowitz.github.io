@@ -42,7 +42,6 @@ b {
     height: 100px;
     width: 100px;
     clip-path: circle(50%);
-    margin-top: 25px;
 }
 
 .fake-button {
@@ -73,9 +72,8 @@ b {
     border: none;
 }
 
-.kris-border {
+.blk-border {
   border: black 1px solid;
-  border-radius: 0.375rem;
 }
 
 .quicksand {
@@ -113,9 +111,19 @@ b {
   transform: translate(-5%,-5%);
 }
 
+.portfolio {
+  text-align: left;
+}
+
 
 .portfolio-bg {
   background-color: #ffe499;
+}
+
+.logo-test{
+  width: auto;
+  max-height: 1.75rem;
+  float: left;
 }
 
 .testimonial-bg {
@@ -171,6 +179,14 @@ b {
   width: fit-content;
   transform: skewY(-5deg) rotate(5deg);
   display: inline-block;
+}
+
+.nda {
+  min-width: 256px;
+  min-height: 143px;
+  max-width: 410px;
+  max-height: 227px;
+  background: black;
 }
 
 .redacted span {
