@@ -187,6 +187,7 @@ b {
   max-width: 410px;
   max-height: 227px;
   background: black;
+  aspect-ratio: 16 / 9;
 }
 
 .redacted span {
@@ -195,13 +196,28 @@ b {
   padding-right: 0.5rem;
 }
 
+.redacted span:hover {
+  color: #fff;
+}
+
 .reveal span {
   color: #fff;
 }
 
-.redacted span:hover {
-  color: #fff;
+.big-boi {
+  font-size: 5rem;
 }
+
+.shh {
+  opacity: 0;
+  transition: 0.4s ease-out;
+}
+
+.shh-div:hover > .shh {
+  opacity: 1;
+}
+
+
 
 /*li .redacted {
   display: inline-block;
